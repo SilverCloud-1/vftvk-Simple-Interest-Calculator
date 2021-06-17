@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!--The beginning of HTML document -->
+<html lang="en"> <!--Document language-->
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">          <!--Link to file .css-->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <script src="script.js"></script>
-  <title>Simple Interest Calculator</title>
+  <script src="script.js"></script>                                 <!--Link to file .js-->
+  <title>Simple Interest Calculator</title> <!--Web page name-->
 </head>
   <body>
-    <div class="mine">
-      <h1 class="name">Simple Interest Calculator</h1>
-        <h3 class="punkt">
-          <p><label for ="Amount">Amount</label>
-            <input  class="number" type="number" id="principal" name="number" onchange="validateAmount()">
+    <div class="maindiv">
+      <h1>Simple Interest Calculator</h1> <!--App name-->
+        <h3>
+          <p><label for ="Amount">Amount</label> 
+            <input  class="number" type="number" id="principal" name="number" onchange="validateAmount()"> <!--The number of money invested-->
           </p>
         </h3>
-      <form class="punkt">
+      <form>
         <label for="Interest Rate">Interest Rate</label>
         <input type="range" class="range" id="rate" min="1" max="20" step="0.25" value="10.25" onchange="getSliderValue()">
-        <span id="rateSpan"> 10.25 </span>%
+        <span id="rateSpan"> 10.25 </span>%   <!--Interest rate-->
       </form>
-          <h3 class="punkt">
+          <h3>
             <p> No. of Years
-              <select class="years" name ="years" id="years">
+              <select class="years" name ="years" id="years"> <!--Saving money-->
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -31,17 +31,17 @@
                 <option value="7">7</option>
                 <option value="8">8</option>
                 <option value="9">9</option>
-                <option value="10">10</option>
+                <option value="10">10</option>  <!--From 1 to 10 years-->
               </select>
             </p>
           </h3>            
             <p>
-              <input  type="button" onclick="compute()"  class="button" value="Compute Interest">
+              <input  type="button" onclick="compute()"  class="button" value="Compute Interest"> <!--Button-->
             </p>
           <h3>
-            <p class="result" class="mine1" id="result"></p>
+            <p class="result" id="result"></p> <!-- Display output calculation-->
           </h3>
-      <div class="footer">&copy Everyone Can Get Rich & Vitalii Virchyk</div>
+      <div class="footer">&#169 This Calculator belongs to Vitalii Virchyk</div> <!--Developer of application-->
     </div>
-  </body>
+  </body> 
 </html>
