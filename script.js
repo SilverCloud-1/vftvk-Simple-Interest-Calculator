@@ -1,9 +1,9 @@
 //Check for positive values
 function validateAmount() {
     var principal = document.getElementById("principal").value;
-    var moreOrEqualZero = parseInt(principal) >= 0;
-    if (!moreOrEqualZero) {
-        alert("Error. Enter a positive number please");
+    var moreThenZero = parseInt(principal) > 0;
+    if (!moreThenZero) {
+        alert("Enter a positive number please");
         document.getElementById("principal").focus();
     }
 }
