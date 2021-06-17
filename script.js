@@ -10,7 +10,7 @@ function validateAmount() {
 
 //Update the rate value
 function getSliderValue() {
-    document.getElementById("rateSpan").innerHTML = document.getElementById("rate").value;
+    document.getElementById("rate_val").innerHTML = document.getElementById("rate").value;
 }
 
 function compute() {
